@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+   
+}
+.left img{
+    height: 50%;
+    animation: move-images 1000ms forwards ease-in-out;
+    transform: translateX(-100%);
+}
+@keyframes move-images{
+    to{
+        transform: translateX(0);
+    }
+}
+.right{
+    animation: content-text 2000ms forwards ease-in-out;
+    transform: translateY(-80px);
+    opacity: 0;
+}
+@keyframes content-text{
+    50%{
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
